@@ -1,0 +1,165 @@
+body {
+    font-family: "Great Vibes", cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/nathan-dumlao-6VhPY27jdps-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    color: #e1a132;
+    padding: 30px;
+    text-align: center;
+    font-size: 3.3rem;
+    text-transform: uppercase;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.contact-info,
+.social-media,
+.map-container {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #e1a132;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    font-family: "Great Vibes", cursive;
+}
+
+p {
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+.map {
+    width: auto;
+    height: auto;
+
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    margin-bottom: 10px;
+}
+
+.social-media ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.social-media ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media ul li i {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1366px) {
+    header {
+        font-size: 3.3rem;
+        padding: 30px;
+    }
+
+    main {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 5rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    .social-media ul li a {
+        font-size: 2rem;
+    }
+
+    .social-media ul li i {
+        font-size: 2rem;
+    }
+
+    .map img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        font-size: 2.6rem;
+    }
+
+    h2 {
+        font-size: 3.9rem;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    .social-media ul li a {
+        font-size: 1.6rem;
+    }
+
+    .social-media ul li i {
+        font-size: 1.6rem;
+    }
+
+    .map img {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    header {
+        font-size: 2.4rem;
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 3rem;
+    }
+
+    .social-media ul li a {
+        font-size: 3rem;
+    }
+
+    .social-media ul li i {
+        font-size: 3rem;
+    }
+
+    .map img {
+        max-width: 0%;
+        height: auto;
+    }
+}

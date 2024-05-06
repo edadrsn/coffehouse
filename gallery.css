@@ -1,0 +1,239 @@
+.gallery-header {
+    background-color: #c49b63;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    font-size: 7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Great Vibes", cursive;
+    height: 15rem;
+    margin-bottom: 3.3px;
+    padding: 3.3rem;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 1);
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #191c1c, 0 0 40px #131716, 0 0 55px #000000, 0 0 75px #000000;
+    font-weight: 600;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 9rem;
+}
+
+.gallery-item {
+    margin: 30px;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    margin-right: 10px;
+}
+
+.gallery-item img {
+    display: block;
+    width: 450px;
+    height: 550px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 3);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/*Share Buttons*/
+.share-buttons {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.social-icons {
+    display: inline-flex;
+    margin-bottom: 3rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #3b1dc4;
+}
+
+.like-btn {
+    display: inline-block;
+    margin: 7px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 20px;
+}
+
+.like-btn:hover {
+    background-color: #3b1dc4;
+}
+
+
+h3 {
+    font-size: 3rem;
+    font-family: "Great Vibes", cursive;
+    text-align: center;
+}
+
+/* Swiper container */
+.swiper-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 650px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #d73030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    max-width: 100%;
+    max-height: 650px;
+    object-fit: cover;
+}
+
+.swiper-container {
+    position: relative;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 600px;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    z-index: 10;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+h3 {
+    font-size: 5rem;
+    font-family: "Great Vibes", cursive;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#galleryStats {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.animated-stats {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.stat {
+    padding: 20px 30px;
+    background-color: #dfbc8a;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.stat:hover {
+    transform: scale(1.2);
+}
+
+.stat-value {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.stat-label {
+    font-size: 2.2rem;
+    color: #010101;
+}
+
+
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1500px) {
+    .swiper-container {
+        max-width: 1200px;
+        height: 600px;
+    }
+
+    .gallery-header {
+        font-size: 5rem;
+        padding: 15px;
+        height: 12rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .swiper-container {
+        max-width: 900px;
+        height: 500px;
+    }
+
+    .gallery-header {
+        font-size: 4rem;
+        padding: 10px;
+        height: 10rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .swiper-container {
+        max-width: 600px;
+        height: 400px;
+    }
+
+    .gallery-header {
+        font-size: 3rem;
+        padding: 5px;
+        height: 8rem;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    .swiper-container {
+        max-width: 400px;
+        height: 300px;
+    }
+
+    .gallery-header {
+        font-size: 2rem;
+        padding: 2px;
+        height: 6rem;
+    }
+}

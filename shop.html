@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Eda Dursun">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to our Coffee Shop!</h1>
+    </header>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search products...">
+        <button onclick="searchProducts()"><i class="fas fa-search"></i></button>
+    </div>
+
+
+    <div class="product">
+        <img src="images/milkshakemilkshake_tarifi_1644911214_2578.webp">
+        <h2>Milkshake</h2>
+        <p class="price">$2,50</p>
+        <button class="buy-btn">Add<i class="fa-solid fa-plus"></i></button>
+        <button class="remove-from-cart-btn">Remove<i class="fa-solid fa-minus"></i></button>
+    </div>
+
+    <div class="product">
+        <img src="images/smoothie.jpg">
+        <h2>Smoothie</h2>
+        <p class="price">$2,42</p>
+        <button class="buy-btn">Add<i class="fa-solid fa-plus"></i></button>
+        <button class="remove-from-cart-btn">Remove<i class="fa-solid fa-minus"></i></button>
+    </div>
+
+    <div class="product">
+        <img src="images/md-Non-Alcoholic-Irish-Coffee-2-1-of-1a.jpg">
+        <h2>Irish Coffee</h2>
+        <p class="price">$2.99</p>
+        <button class="buy-btn">Add<i class="fa-solid fa-plus"></i></button>
+        <button class="remove-from-cart-btn">Remove<i class="fa-solid fa-minus"></i></button>
+    </div>
+
+    <div class="product">
+        <img src="images/turk-kahvesi-kg446.jpg">
+        <h2>Turkish Coffee</h2>
+        <p class="price">$1,69</p>
+        <button class="buy-btn">Add<i class="fa-solid fa-plus"></i></button>
+        <button class="remove-from-cart-btn">Remove<i class="fa-solid fa-minus"></i></button>
+    </div>
+
+    <div class="product">
+        <img src="images/espresso.jpg">
+        <h2>Espresso</h2>
+        <p class="price">$1,39</p>
+        <button class="buy-btn">Add<i class="fa-solid fa-plus"></i></button>
+        <button class="remove-from-cart-btn">Remove<i class="fa-solid fa-minus"></i></button>
+    </div>
+
+    <div class="product">
+        <img src="images/soguk-americano-tarifi.webp">
+        <h2>Ice Americano</h2>
+        <p class="price">$2,31</p>
+        <button class="buy-btn">Add<i class="fa-solid fa-plus"></i></button>
+        <button class="remove-from-cart-btn">Remove<i class="fa-solid fa-minus"></i></button>
+    </div>
+
+    <div class="product">
+        <img src="images/2-Americano-kahvecesitleri-e1608019107424.jpg">
+        <h2>Americano</h2>
+        <p class="price">$1,92</p>
+        <button class="buy-btn">Add<i class="fa-solid fa-plus"></i></button>
+        <button class="remove-from-cart-btn">Remove<i class="fa-solid fa-minus"></i></button>
+    </div>
+
+    <div class="product">
+        <img src="images/5-Latte-kahvecesitleri-e1608019651132.jpg">
+        <h2>Latte</h2>
+        <p class="price">$2,15</p>
+        <button class="buy-btn">Add<i class="fa-solid fa-plus"></i></button>
+        <button class="remove-from-cart-btn">Remove<i class="fa-solid fa-minus"></i></button>
+    </div>
+
+    <div class="product">
+        <img src="images/650x344-sicak-cikolata-kilo-yapar-mi-sicak-cikolata-nasil-tuketilmeli-1512045824334.webp">
+        <h2>Hot Chocolate</h2>
+        <p class="price">$1,89</p>
+        <button class="buy-btn">Add<i class="fa-solid fa-plus"></i></button>
+        <button class="remove-from-cart-btn">Remove<i class="fa-solid fa-minus"></i></button>
+    </div>
+
+    <div class="product">
+        <img src="images/3-Cappuccino-kahvecesitleri-e1608019343538.jpg">
+        <h2>Cappucino</h2>
+        <p class="price">$2,15</p>
+        <button class="buy-btn">Add<i class="fa-solid fa-plus"></i></button>
+        <button class="remove-from-cart-btn">Remove<i class="fa-solid fa-minus"></i></button>
+    </div>
+
+    <div class="product">
+        <img src="images/4-Frappe-kahvecesitleri-e1608019508562.jpg">
+        <h2>Frappe</h2>
+        <p class="price">$3,17</p>
+        <button class="buy-btn">Add<i class="fa-solid fa-plus"></i></button>
+        <button class="remove-from-cart-btn">Remove<i class="fa-solid fa-minus"></i></button>
+    </div>
+    <div class="product">
+        <img src="images/m1kf6i9y.png">
+        <h2>Cortado</h2>
+        <p class="price">$3.99</p>
+        <button class="buy-btn">Add<i class="fa-solid fa-plus"></i></button>
+        <button class="remove-from-cart-btn">Remove<i class="fa-solid fa-minus"></i></button>
+    </div>
+
+    <div class="product">
+        <img src="images/6-Macchiato-kahvecesitleri-e1608019775279.jpg">
+        <h2>Macchiato</h2>
+        <p class="price">$2.11</p>
+        <button class="buy-btn">Add<i class="fa-solid fa-plus"></i></button>
+        <button class="remove-from-cart-btn">Remove<i class="fa-solid fa-minus"></i></button>
+    </div>
+
+    <div class="product">
+        <img src="images/7-Mocha-kahvecesitleri-e1608019973444.jpg">
+        <h2>Mocha</h2>
+        <p class="price">$2,89</p>
+        <button class="buy-btn">Add<i class="fa-solid fa-plus"></i></button>
+        <button class="remove-from-cart-btn">Remove<i class="fa-solid fa-minus"></i></button>
+    </div>
+
+    <div class="product">
+        <img src="images/8-Marocchino-kahvecesitleri-e1608020052456.jpg">
+        <h2>Marocchino</h2>
+        <p class="price">$1.99</p>
+        <button class="buy-btn">Add<i class="fa-solid fa-plus"></i></button>
+        <button class="remove-from-cart-btn">Remove<i class="fa-solid fa-minus"></i></button>
+    </div>
+
+    <div class="product">
+        <img src="images/flatwhite-nasilyapilir--64.png">
+        <h2>Flat White</h2>
+        <p class="price">$2,42</p>
+        <button class="buy-btn">Add<i class="fa-solid fa-plus"></i></button>
+        <button class="remove-from-cart-btn">Remove<i class="fa-solid fa-minus"></i></button>
+    </div>
+
+    <div class="product">
+        <img src="images/9-Filtre-Kahve-kahvecesitleri-e1608020113349.jpg">
+        <h2>Drip Coffee</h2>
+        <p class="price">$2</p>
+        <button class="buy-btn">Add<i class="fa-solid fa-plus"></i></button>
+        <button class="remove-from-cart-btn">Remove<i class="fa-solid fa-minus"></i></button>
+    </div>
+
+    <div class="product">
+        <img src="images/11-Soğuk-Kahve-kahvecesitleri-e1608020208594.jpg">
+        <h2>Ice Coffee</h2>
+        <p class="price">$1.99</p>
+        <button class="buy-btn">Add<i class="fa-solid fa-plus"></i></button>
+        <button class="remove-from-cart-btn">Remove<i class="fa-solid fa-minus"></i></button>
+    </div>
+
+    <div class="shopping">
+        <span class="text">Click to view your cart</span>
+        <div class="cart-icon" style="font-size: 24px;">
+            <a href="#" id="cartIcon"><i class="fa-solid fa-cart-shopping"></i></a>
+            <span id="cartItemCount">0</span>
+        </div>
+    </div>
+
+    <!-- Sepet Popup -->
+    <div id="cartPopup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeCartPopup()">&times;</span>
+            <h2 style="color: #fff;">Shopping Cart</h2>
+            <div id="cartItems"></div>
+            <h3 style="font-size: 3rem;">Total: $<span id="cartTotalPrice">0.00 . Enjoy your meal!</span></h3>
+        </div>
+    </div>
+
+
+    <h2 class="form-heading">your contact information</h2>
+    <footer>
+        <form id="contact-form" class="contact-form">
+            <div class="input-group">
+                <input type="text" id="name" name="name" placeholder="Name & Surname">
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="Email Address">
+            </div>
+            <div class="input-group">
+                <input type="tel" id="phone" name="phone" placeholder="Phone">
+            </div>
+            <div class="input-group">
+                <textarea id="address" name="address" placeholder="Your Address"></textarea>
+            </div>
+            <a href="payseculery.html">Order Now</a>
+        </form>
+    </footer>
+    <script src='jquery-3.7.1.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="shop.js"></script>
+</body>
+
+</html>
