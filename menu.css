@@ -181,7 +181,7 @@ span i {
 
 @media screen and (max-width: 430px) {
     li.menu-item {
-    margin-left: 16rem;
+    margin-left: 12rem;
     font-size: 6rem;
     }
 
