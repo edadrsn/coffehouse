@@ -227,6 +227,7 @@ h3 {
 
 @media screen and (max-width: 200px) {
     .swiper-container {
+        margin-right:3rem;
         max-width: 400px;
         height: 300px;
     }
@@ -236,4 +237,5 @@ h3 {
         padding: 2px;
         height: 6rem;
     }
+    
 }
