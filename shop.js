@@ -20,6 +20,9 @@ const closeCartBtn = document.querySelector('#cartPopup .close-btn');
 const cartItemsContainer = document.getElementById('cartItems');
 const cartTotalPrice = document.getElementById('cartTotalPrice');
 const cartItemCount = document.getElementById('cartItemCount');
+const cartUpdatePopup = document.getElementById('cartUpdatePopup');
+const cartUpdatePopupDelete = document.getElementById('cartUpdatePopupDelete');
+
 
 function addToCart(productName, productPrice) {
     let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
@@ -66,6 +69,24 @@ function renderCartItems(items) {
 
         cartItemsContainer.appendChild(itemElement);
     });
+}
+
+function openCartUpdatePopup() {
+    cartUpdatePopup.style.display = 'block';
+    updateCartInfo();
+}
+function openCartUpdatePopupDelete() {
+    cartUpdatePopupDelete.style.display = 'block';
+    updateCartInfo();
+}
+
+function closeCartUpdatePopupDelete() {
+    cartUpdatePopupDelete.style.display = 'none';
+}
+
+
+function closeCartUpdatePopup() {
+    cartUpdatePopup.style.display = 'none';
 }
 
 // Sepet popup'ını açtım
@@ -143,6 +164,14 @@ $(document).ready(function () {
         let productName = $(this).siblings('h2').text(); // Ürün adını al
         removeFromCart(productName); // Sepetten ürünü kaldır
         updateCartInfo(); // Sepet bilgilerini güncelle
+    });
+
+    $('.buy-btn').on('click', function () {
+        openCartUpdatePopup();
+    });
+
+    $(".remove-from-cart-btn").on("click", function () {
+        openCartUpdatePopupDelete();
     });
 });
 
